@@ -1,0 +1,47 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin font-display-1{
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+
+@mixin font-display-1 {
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+
+@mixin font-headline {
+    font-size: 2.4rem;
+}
+
+@mixin font-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@mixin font-subhead {
+    font-size: 1.6rem;
+}
+
+@mixin font-caption {
+    font-size: 1.2rem;
+}
+
+@mixin font-button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
