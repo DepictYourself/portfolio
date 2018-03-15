@@ -32,6 +32,20 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
+                use: [
+                  {
+                    loader: 'style-loader'
+                  },
+                  {
+                    loader: 'css-loader'
+                  },
+                  {
+                    loader: 'sass-loader'
+                  }
+                ]
+              },
+            /* {
+                test: /\.scss$/,
                 use: extractSass.extract({
                     use: [
                     {
@@ -44,7 +58,7 @@ module.exports = {
                     // use style-loader in development
                     fallback: "style-loader"
                 })
-            },  
+            }, */
             {
                 test: /\.html$/,
                 use: [

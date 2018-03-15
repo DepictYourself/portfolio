@@ -1,4 +1,5 @@
 import css from './styles.scss';
+import grid from 'bootstrap-grid';
 
 const arr = [1, 2, 3];
 const iAmJavascriptES6 = () => console.log(...arr);
