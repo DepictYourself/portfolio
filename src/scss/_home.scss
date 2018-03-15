@@ -68,7 +68,6 @@
 .feature {
     background-color: $color-grey-3;
     padding: 3rem 1rem;
-
     
     &__box {
         margin: 0 auto;
@@ -95,7 +94,6 @@
     }
 
     &__title {
-        @include font-title;
         color: rgba($color-black-1, .87);
         margin-bottom: 1.6rem;
     }

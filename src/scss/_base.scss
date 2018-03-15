@@ -21,36 +21,36 @@ body {
 }
 
 //Display 1 45px Light
-.font-1 {
+.font-display-1 {
     @include font-display-1;
 }
 
 //Display 2 34px light
-.font-2 {
+.font-display-2 {
     @include font-display-1;
 }
 
 //Headline 24px Regular
-.font-3 {
+.font-headline {
     @include font-headline;
 }
 
 //Title 20px Medium
-.font-4 {
+.font-title {
     @include font-title;
 }
 
 //Subheading 16px Regular
-.font-5 {
+.font-subheading {
     @include font-subhead;
 }
 
 //Caption 12px Regular
-.font-6 {
+.font-caption {
     @include font-caption;
 }
 
 //Button
-.font-7 {
+.font-button {
     @include font-button;
 }
