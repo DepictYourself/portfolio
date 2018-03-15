@@ -173,3 +173,68 @@
         text-transform: uppercase;
     }
 }
+
+/*
+    GALLERY
+*/
+
+.gallery {
+    // Fix wrapping issue because of whitespace between inline blocks
+    font-size: 0;
+    padding: 0;
+    background-color: $color-grey-2;
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    &__item-wrapper {
+        display: inline-block;
+        width: 25%;
+        overflow: hidden;
+
+        @media only screen and (max-width: 1200px) {
+            width: 33.333%;
+        }
+
+        @media only screen and (max-width: 900px) {
+            width: 50%;
+        }
+
+        @media only screen and (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
+    figure {
+        position: relative;
+        
+
+        &:hover figcaption {
+            transform: translateY(0);
+        }
+    }
+
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2rem 1rem;
+        text-align: center;
+        font-size: $default-font-size;
+        background-color: rgba($color-grey-1, .6);
+        color: $color-grey-4;
+        transform: translateY(10rem);
+        transition: transform .2s;
+    }
+
+    &__item {
+        width: 100%;
+        transition: all .4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
