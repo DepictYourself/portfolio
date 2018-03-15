@@ -20,6 +20,11 @@ body {
     color: rgba($color-black-1, .87);
 }
 
+section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
 //Display 1 45px Light
 .font-display-1 {
     @include font-display-1;

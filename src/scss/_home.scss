@@ -10,7 +10,7 @@
         rgba($color-main-3, 0.6) 0%,
         rgba($color-main-2, 0.6) 50%,
         rgba($color-second-1, 0.6) 100%),
-        url('./img/background.jpg');
+        url('./img/background-2x.jpg');
     background-size: cover;
     background-position: center;
     overflow: auto;
@@ -106,5 +106,70 @@
         color: rgba($color-black-1, .54);
         text-align: justify;
         line-height: 1.8rem;
+    }
+}
+
+/*
+    ABOUT
+*/
+
+.about {
+    background: linear-gradient(
+        to bottom,
+        #03A9F4 12.71%, 
+        #673AB7 100%);
+    
+
+    &__profile {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__profile-picture {
+        border-radius: 50%;
+        box-shadow: 0 5px 1rem rgba($color-black-1, .6);
+    }
+
+    &__socials {
+        display: inline-block;
+    }
+
+    &__text {
+        text-align: justify;
+        color: $color-grey-4;
+        margin-bottom: 3rem;
+    }
+
+    &__skill-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__skill-item {
+        margin: 1rem;
+        padding: 1rem 1.6rem;
+        background-color: $color-main-1;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 1rem rgba($color-black-1, .2);
+        }
+
+        &:hover .about__skill-text {
+            background-image: linear-gradient(to right, $color-second-2, $color-second-3);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;            
+        }
+        
+    }
+
+    &__skill-text {
+        @include font-button;
+        color: $color-grey-4;
+        font-weight: 500;
+        text-transform: uppercase;
     }
 }
