@@ -25,7 +25,7 @@ module.exports = {
                         loader: 'svg-sprite-loader',
                         options: {
                             extract: true,
-                            spriteFilename: 'sprite-[hash:6].svg'
+                            spriteFilename: 'sprite.svg'
                         }
                     }
                 ]
@@ -73,7 +73,9 @@ module.exports = {
                 use: [
                     {
                         loader: "file-loader",
-                        options: {}  
+                        options: {
+                            name: '[path][name].[ext]'
+                        }  
                     }
                 ]
             }
