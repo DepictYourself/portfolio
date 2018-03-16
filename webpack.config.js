@@ -1,6 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 const extractSass = new ExtractTextPlugin({
@@ -88,7 +87,6 @@ module.exports = {
             template: "./src/index.html",
             filename: "./index.html"
         }),
-        new CleanWebpackPlugin(['dist']),
         new SpriteLoaderPlugin()
     ]
 }
