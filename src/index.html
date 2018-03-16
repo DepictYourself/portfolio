@@ -50,7 +50,7 @@
         <div class="container-fluid">
             <div class="about__profile">
                 <img src="./img/profile-1x.png" alt="Profilkép" class="about__profile-picture">
-                <div class="about__socials">
+                <div class="social__container">
                     <!-- TODO social icons and links -->
                 </div>
             </div>
@@ -116,17 +116,17 @@
         </div>
     </section>
 
-    <form action="#" class="form">
+    <form action="https://formspree.io/totha014@gmail.com" method="POST" class="form">
         <div class="container">
             <h2 class="font-title">Írj nekem</h2>
 
             <div class="form__group">
-                <input type="text" class="form__input" placeholder="Név" id="name" required>
+                <input type="text" class="form__input" placeholder="Név" id="name" name="name" required>
                 <label for="name" class="form__label">Név</label>
             </div><!-- FORM__GROUP END -->
 
             <div class="form__group">
-                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                <input type="email" class="form__input" placeholder="Email" id="email" name="email" required>
                 <label for="email" class="form__label">Email</label>
             </div><!-- FORM__GROUP END -->
 
