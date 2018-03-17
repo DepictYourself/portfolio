@@ -116,30 +116,52 @@
         </div>
     </section>
 
-    <form action="https://formspree.io/totha014@gmail.com" method="POST" class="form">
+    <section class="contact">
         <div class="container">
-            <h2 class="font-title">Írj nekem</h2>
-
-            <div class="form__group">
-                <input type="text" class="form__input" placeholder="Név" id="name" name="name" required>
-                <label for="name" class="form__label">Név</label>
-            </div><!-- FORM__GROUP END -->
-
-            <div class="form__group">
-                <input type="email" class="form__input" placeholder="Email" id="email" name="email" required>
-                <label for="email" class="form__label">Email</label>
-            </div><!-- FORM__GROUP END -->
-
-            <div class="form__group">
-                <textarea name="message" id="message" class="form__message" rows="6" placeholder="Üzenet"></textarea>
-            </div>
-
-            <div class="form__group">
-                <button class="btn btn--blue">Küldés</button>
-            </div><!-- FORM__GROUP END -->
-
+            <div class="row">
+                <form action="https://formspree.io/totha014@gmail.com" method="POST" class="form">
+                    <div class="container">
+                        <h2 class="font-title">Írj nekem</h2>
             
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Név*" id="name" name="name" required>
+                            <label for="name" class="form__label">Név</label>
+                        </div><!-- FORM__GROUP END -->
+            
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Email*" id="email" name="email" required>
+                            <label for="email" class="form__label">Email</label>
+                        </div><!-- FORM__GROUP END -->
+            
+                        <div class="form__group">
+                            <textarea name="message" id="message" class="form__message" rows="6" placeholder="Üzenet"></textarea>
+                        </div>
+            
+                        <div class="form__group">
+                            <button class="btn btn--blue">Küldés</button>
+                        </div><!-- FORM__GROUP END -->
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__text">Készítette:
+                    <a href="https://github.com/DepictYourself" class="footer__link">Tóth Ágoston</a>
+                    <a href="https://github.com/DepictYourself/depictyourself.github.io" class="footer__link">
+                        hosted by
+                        <img src="img/SVG/github.svg" alt="Github Pages" class="footer__github-icon">
+                    </a>
+                    <a href="https://github.com/DepictYourself/portfolio" class="footer__link">
+                        Forráskód
+                    </a>
+                </div>
+                <div class="footer__text">Minden jog fenntartva &copy; <span id="copyright"></span></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -248,7 +248,8 @@
 
     h2 {
         text-align: center;
-        margin: 5rem auto;
+        margin: 0 auto;
+        margin-bottom: 3rem;
     }
 
     &__group:not(:last-child) {
@@ -357,5 +358,59 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
+    }
+}
+
+/*
+    FOOTER
+*/
+
+.footer {
+    text-align: center;
+    background-color: $color-black-4;
+    padding: 3rem 2rem;
+
+    &__text {
+        color: $color-grey-2;
+        vertical-align: middle;
+
+        &:first-child{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__github-icon {
+        display: inline-block;
+        height: 2.9rem;
+        width: 2.9rem;
+        vertical-align: middle;
+    }
+
+    &__github-icon path {
+        fill: pink;
+    }
+
+    &__link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        vertical-align: middle;
+        line-height: 2.9rem;
+
+        &:link,
+        &:visited {
+            color: $color-main-1;
+            background-color: $color-black-4;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-grey-2;
+            box-shadow: 0 1rem 2rem rgba($color-black-1, .4);
+            transform: rotate(5deg) scale(1.3);
+        }
     }
 }
