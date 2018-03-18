@@ -130,8 +130,36 @@
         box-shadow: 0 5px 1rem rgba($color-black-1, .6);
     }
 
-    &__socials {
+    &__social-container {
+        margin-top: 2rem;
+    }
+
+    &__social-icon {
+        height: 4rem;
+        width: 4rem;
         display: inline-block;
+        transition: all .4s;
+
+        &:hover {
+            transform: translateY(-.7rem) scale(1.1);
+        }
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        &--linkedin {
+            background-image: url('./img/SVG/linkedin.svg?fill=%23fafafa');
+            
+        }
+
+        &--github {
+            background-image: url('./img/SVG/github.svg?fill=%23fafafa');
+        }
+
+        &--codepen {
+            background-image: url('./img/SVG/codepen.svg?fill=%23fafafa');
+        }
     }
 
     &__text {
