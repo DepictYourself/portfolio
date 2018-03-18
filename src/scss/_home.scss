@@ -165,12 +165,20 @@
     &__text {
         text-align: justify;
         color: $color-grey-4;
-        margin-bottom: 3rem;
+        margin-bottom: 4.5rem;
+    }
+
+    &__skill-category {
+        color: $color-grey-4;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
     }
 
     &__skill-container {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 1.5rem;
     }
 
     &__skill-item {
