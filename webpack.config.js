@@ -20,13 +20,14 @@ module.exports = {
             {
                 test: /\.svg$/,
                 use: [
-                    { 
-                        loader: 'svg-sprite-loader',
-                        options: {
+                    {
+                        loader: 'svg-sprite-loader', 
+                        options: { 
                             extract: true,
-                            spriteFilename: 'sprite.svg'
-                        }
-                    }
+                            spriteFilename: svgPath => `sprite${svgPath.substr(-4)}`
+                        } 
+                    },
+                    'svg-fill-loader',
                 ]
             },
             /* {
