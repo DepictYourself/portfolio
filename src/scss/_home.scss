@@ -79,20 +79,43 @@
 */
 
 .btn {
-    @include font-button;
-    padding: 1rem 2rem;
-    color: $color-grey-1;
-    background-color: $color-grey-3;
-    border-radius: 100px;
-    border: none;
-    box-shadow: 0 .4rem 1rem rgba($color-black-1, .25);
-    text-decoration: none;
-    cursor: pointer;
+    
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        @include font-button;
+        padding: 1rem 2rem;
+        color: $color-grey-1;
+        background-color: $color-grey-3;
+        border-radius: 100px;
+        border: none;    
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1.1rem rgba($color-black-1, 0.2);
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black-1, 0.2);
+    }
 
     &--blue {
-        background-color: $color-main-1;
-        color: $color-grey-3;
+        &,
+        &:link,
+        &:visited {
+            background-color: $color-main-1;
+            color: $color-grey-3;
+        }
     }
+
 }
 
 /*
