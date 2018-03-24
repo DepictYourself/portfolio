@@ -104,7 +104,7 @@
 
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black-1, 0.2);
+        box-shadow: 0 3px 2rem rgba($color-black-1, 0.2);
     }
 
     &--blue {
@@ -162,7 +162,7 @@
     &__text {
         color: rgba($color-black-1, .54);
         text-align: justify;
-        line-height: 1.8rem;
+        line-height: 2rem;
     }
 }
 
